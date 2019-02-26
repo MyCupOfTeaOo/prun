@@ -1,9 +1,12 @@
+#!/usr/bin/env node
+
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const child_process = require("child_process");
-console.log(process.argv);
-const inputPath = process.argv.reverse().find(arg => /[\/.]/.test(arg));
+const inputPath =
+  process.argv.slice(2, process.argv.length).find(arg => /[\/.]/.test(arg)) ||
+  "./";
 const cwd = path.resolve(inputPath);
 const jsonPath = `${cwd}\\package.json`;
 
