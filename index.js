@@ -42,17 +42,11 @@ function main() {
       }
     ])
     .then(answers => {
-      const ls = child_process.spawn(
+      child_process.spawn(
         process.platform === "win32" ? "npm.cmd" : "npm",
         ["run", answers.script],
-        { cwd }
+        { cwd, stdio: "inherit" }
       );
-      ls.stdout.on("data", data => {
-        console.info(data.toString());
-      });
-      ls.stderr.on("data", data => {
-        console.error(data.toString());
-      });
     });
 }
 main();
