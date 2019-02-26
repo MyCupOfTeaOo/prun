@@ -4,6 +4,8 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const child_process = require("child_process");
+// require("colors");
+
 const inputPath =
   process.argv.slice(2, process.argv.length).find(arg => /[\/.]/.test(arg)) ||
   "./";
