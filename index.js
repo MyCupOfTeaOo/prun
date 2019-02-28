@@ -10,9 +10,7 @@ const inputPath =
   process.argv.slice(2, process.argv.length).find(arg => /[\/.]/.test(arg)) ||
   "./";
 const cwd = path.resolve(inputPath);
-const jsonPath = `${cwd}\\package.json`;
-
-console.info(jsonPath);
+const jsonPath = `${cwd}/package.json`;
 
 function gen_space(str) {
   return Array(str.length < 20 ? 24 - str.length : 4).join(" ") + " ";
