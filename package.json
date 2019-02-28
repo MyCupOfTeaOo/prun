@@ -1,5 +1,5 @@
 {
-  "name": "prun",
+  "name": "tea-prun",
   "version": "0.0.2",
   "description": "cli run npm package script",
   "main": "index.js",
@@ -11,6 +11,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "authors": [
+    "zouwendi <tz310200@gmail.com> (https://github.com/tz310200)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tz310200/prun"
+  },
   "keywords": [
     "cli",
     "npm",
@@ -20,6 +27,7 @@
   "author": "tea",
   "license": "ISC",
   "bin": {
-    "prun": "./index.js"
+    "prun": "./index.js",
+    "tea-prun": "./index.js"
   }
 }
