@@ -14,7 +14,7 @@ function gen_space(str) {
 }
 
 function main() {
-  const PROJECT_PATH = pkgDir.sync(path.resolve());
+  const PROJECT_PATH = pkgDir.sync(cwd);
   if (!PROJECT_PATH) {
     console.error(
       "没有在该路径及向上查找到 package.json 文件,路径:".red,
@@ -22,7 +22,8 @@ function main() {
     );
     return;
   }
-  const JSON_PATH = path.resolve(PROJECT_PATH, "/package.json");
+  const JSON_PATH = path.resolve(PROJECT_PATH, "./package.json");
+  console.log(JSON_PATH);
   const json = JSON.parse(fs.readFileSync(JSON_PATH));
   const scripts = json.scripts;
   if (!scripts) {
