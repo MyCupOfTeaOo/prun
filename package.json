@@ -12,7 +12,7 @@
     "release-it": "^13.6.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish:all": "release-it --ci"
   },
   "authors": [
     "zouwendi <tz310200@gmail.com> (https://github.com/tz310200)"
