@@ -7,10 +7,7 @@ const child_process = require("child_process");
 const pkgDir = require("pkg-dir");
 require("colors");
 
-const inputPath =
-  process.argv.slice(2, process.argv.length).find((arg) => /[\/.]/.test(arg)) ||
-  "./";
-const cwd = path.resolve(inputPath);
+const cwd = path.resolve();
 
 function gen_space(str) {
   return Array(str.length < 20 ? 24 - str.length : 4).join(" ") + " ";

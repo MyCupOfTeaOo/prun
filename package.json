@@ -8,7 +8,9 @@
     "inquirer": "^6.2.2",
     "pkg-dir": "^4.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "release-it": "^13.6.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
