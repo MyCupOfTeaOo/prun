@@ -1,6 +1,6 @@
 {
   "name": "tea-prun",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "cli run npm package script",
   "main": "index.js",
   "dependencies": {
