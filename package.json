@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "colors": "^1.3.3",
-    "inquirer": "^6.2.2"
+    "inquirer": "^6.2.2",
+    "pkg-dir": "^4.2.0"
   },
   "devDependencies": {},
   "scripts": {
